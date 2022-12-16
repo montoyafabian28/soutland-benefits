@@ -10,8 +10,10 @@ const groupIDInput = document.getElementById('groupNum');
 const retrieveButton = document.getElementById('asRetrieve');
 const tableResults = document.querySelector('#asTableGroup4provider > tbody');
 
+
 // Verificamos que el sitio disponga de todos los elementos necesarios
-const siteObjects = [].push(selectSearchMethod,groupInputsMethod1,memberIDInput,
+const siteObjects = new Array();
+siteObjects.push(selectSearchMethod,groupInputsMethod1,memberIDInput,
     groupIDInput,retrieveButton,tableResults);
 if (siteObjects.some(element => element === null)){
     return 'FAILED TO LOAD RESOURCE AT SITE';

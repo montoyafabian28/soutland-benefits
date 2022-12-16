@@ -13,7 +13,8 @@ const retrieveButton = document.getElementById('asRetrieve');
 const tableResults = document.querySelector('#asTableGroup4provider > tbody');
 
 // Verificamos que el sitio disponga de todos los elementos necesarios
-const siteObjects = [].push(selectSearchMethod,groupInputsMethod2,
+const siteObjects = new Array();
+siteObjects.push(selectSearchMethod,groupInputsMethod2,
     inputLastName,inputName,inputDOB,retrieveButton,tableResults);
 if (siteObjects.some(element => element === null)) {
     return 'FAILED TO LOAD RESOURCE AT SITE';
